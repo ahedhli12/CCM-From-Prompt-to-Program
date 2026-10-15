@@ -1,21 +1,21 @@
-# Design Your Own Robot
+# Event Budget Planner prompts
 
-Use these prompts in GitHub Copilot Chat. Review and apply each edit in my_project.py, save, close the old drawing window, and run again.
+Use these requests in GitHub Copilot Chat. Make one change at a time in my_project.py. Review and apply the edit, save, close the old app window, and run again.
 
-## 1 Draw
-I have never programmed before. In my_project.py, use Python turtle to draw a friendly robot with a square head, a rectangular body, two eyes, arms, and legs. Use simple turtle commands and named colors. Keep the whole robot inside a 700 by 600 window. Do not use external packages, loops, custom functions, or classes. Finish with turtle.done() so the window stays open. Explain how to run it in VS Code and briefly explain the drawing sections.
+## Build the app
+I have never programmed before. In my_project.py, create a small Python Tkinter event budget app. Include labeled fields for number of attendees, food cost per person, supplies cost, and available budget. Add a Calculate button. Show the total cost and how much is left or how far over budget I am. Start with 20 attendees, $10 food per person, $50 supplies, and a $300 budget. Handle blank, nonnumeric, negative, and non-finite input with a helpful message. Require at least one attendee. Use only the standard library, a readable window, clear variable names, and brief comments. Explain how to run it in VS Code. If you use print(), separate arguments with commas, not f-strings.
 
-## 2 Colors
-Change only my robot's head to purple and body to orange. Keep the other parts and the drawing window the same. Explain which lines changed.
+## Personalize
+Change my app's title to [event name] and its main colors to [colors]. Keep the budget calculation and input checks working.
 
-## 3 One fun detail
-Add [a small hat / one antenna / a balloon] to my robot. Keep the existing robot and fit everything inside the window. Use simple turtle commands. Keep turtle.done() at the very end. Explain what changed.
+## One useful feature
+Add [cost per attendee / a Clear button] to my app. Keep the existing features working. Explain the change and give me one test.
 
-## 4 Partner surprise
-My partner wants [one small change]. Make only that change to the robot and explain it. Keep turtle.done() last.
+## Understand
+Explain in everyday language what happens when I click Calculate. Show me where attendees times food cost plus supplies is calculated. Do not change the file.
 
-## Understand one line
-Show me the line that controls my robot's body color. Explain how to change that color myself.
+## Fix
+I entered [values]. I expected [result] but got [actual result]. Here is my code and any error: [paste]. Explain the cause and help me make the smallest fix.
 
-## Fix a problem
-I asked for [describe my idea], but I see [describe what happened]. Here is my code and any error: [paste]. Help me make the smallest fix. Explain it in plain language.
+## Check
+Give me two sets of sample numbers with the expected totals so I can check my app. Use easy arithmetic.
