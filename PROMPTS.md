@@ -1,21 +1,27 @@
-# Event Budget Planner prompts
+# From Prompt to Program step by step
 
-Use these requests in GitHub Copilot Chat. Make one change at a time in my_project.py. Review and apply the edit, save, close the old app window, and run again.
+Start with the empty my_project.py. Use ONE prompt at a time in Copilot Chat. After each edit, save, close any old app window, run, and check the result.
 
-## Build the app
-I have never programmed before. In my_project.py, create a small Python Tkinter event budget app. Include labeled fields for number of attendees, food cost per person, supplies cost, and available budget. Add a Calculate button. Show the total cost and how much is left or how far over budget I am. Start with 20 attendees, $10 food per person, $50 supplies, and a $300 budget. Handle blank, nonnumeric, negative, and non-finite input with a helpful message. Require at least one attendee. Use only the standard library, a readable window, clear variable names, and brief comments. Explain how to run it in VS Code. If you use print(), separate arguments with commas, not f-strings.
+## 1 Create the app
+I have never programmed before. Create my first version in the empty my_project.py file. Use Python Tkinter to open an Event Budget Planner window with two labeled input fields: number of attendees and food cost per person in dollars. Add a Calculate button that displays attendees times food cost as a dollar amount. Keep the interface readable and the code straightforward with brief comments. Show a helpful message for blank, nonnumeric, negative, or non-finite input, and require at least one attendee. Use only the standard library. Do not add supplies, a budget limit, or extra features yet. Explain how to apply the code and run the file in VS Code. If print() is needed, use comma-separated arguments, not f-strings.
 
-## Personalize
-Change my app's title to [event name] and its main colors to [colors]. Keep the budget calculation and input checks working.
+Check: 20 attendees at $10 each gives $200.
 
-## One useful feature
-Add [cost per attendee / a Clear button] to my app. Keep the existing features working. Explain the change and give me one test.
+## 2 Add supplies
+Add a supplies cost field to my existing app. Update Calculate to use attendees times food cost per person plus supplies. Keep the existing interface and input checks working, including checking the supplies input. Explain what changed and give me one test.
 
-## Understand
-Explain in everyday language what happens when I click Calculate. Show me where attendees times food cost plus supplies is calculated. Do not change the file.
+Check: 20 attendees at $10 each plus $50 supplies gives $250.
 
-## Fix
-I entered [values]. I expected [result] but got [actual result]. Here is my code and any error: [paste]. Explain the cause and help me make the smallest fix.
+## 3 Personalize
+Personalize my app for [my event name]. Change the window title and use [my chosen colors]. Keep the fields, calculations, and input checks working. Explain the changes briefly.
 
-## Check
-Give me two sets of sample numbers with the expected totals so I can check my app. Use easy arithmetic.
+Check: the title and colors change, and the $250 calculation still works.
+
+## 4 Fix a problem
+I entered [values]. I expected [result], but got [actual result]. Here is my code and error: [paste]. Help me make the smallest fix and explain it simply.
+
+## Explain without editing
+Explain what happens when I click Calculate in everyday language. Point out the calculation line. Do not change the code.
+
+## Optional only if time remains
+Add an available-budget field and display how much is left or how far over budget the event is. Preserve existing calculations and input checks. Check: a $250 total with a $300 budget leaves $50.
