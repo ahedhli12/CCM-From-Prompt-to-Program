@@ -1,18 +1,21 @@
-# Silly Campus News prompts
+# Design Your Own Robot
 
-## A new setting
-I have never programmed before. Change my_project.py into a short, funny story about [my idea]. Keep the three questions about a made-up name, an animal, and a food. Use only input(), variables, and print(). Use separate print() arguments with commas, not f-strings. Keep the program under 12 lines. Explain the changes in simple language.
+Use these prompts in GitHub Copilot Chat. Review and apply each edit in my_project.py, save, close the old drawing window, and run again.
 
-Ideas: a restaurant on the moon, a zoo run by students, a superhero's first day at CCM.
+## 1 Draw
+I have never programmed before. In my_project.py, use Python turtle to draw a friendly robot with a square head, a rectangular body, two eyes, arms, and legs. Use simple turtle commands and named colors. Keep the whole robot inside a 700 by 600 window. Do not use external packages, loops, custom functions, or classes. Finish with turtle.done() so the window stays open. Explain how to run it in VS Code and briefly explain the drawing sections.
 
-## A surprising ending
-Change only the last line of my story to [our funny ending]. Keep the code simple and use commas in print().
+## 2 Colors
+Change only my robot's head to purple and body to orange. Keep the other parts and the drawing window the same. Explain which lines changed.
 
-## An explanation
-Explain one line of my program in everyday language. Show where my answer is remembered and where it appears in the story.
+## 3 One fun detail
+Add [a small hat / one antenna / a balloon] to my robot. Keep the existing robot and fit everything inside the window. Use simple turtle commands. Keep turtle.done() at the very end. Explain what changed.
 
-## Help with an error
-I am a beginner. Here is my code and the full error: [paste both]. Explain the problem simply and suggest the smallest fix. Keep the program short.
+## 4 Partner surprise
+My partner wants [one small change]. Make only that change to the robot and explain it. Keep turtle.done() last.
 
-## Optional extra question
-Help me add one question about a favorite place and use the answer in my story. Use only input(), variables, and comma-separated print() arguments. Explain the new lines.
+## Understand one line
+Show me the line that controls my robot's body color. Explain how to change that color myself.
+
+## Fix a problem
+I asked for [describe my idea], but I see [describe what happened]. Here is my code and any error: [paste]. Help me make the smallest fix. Explain it in plain language.
