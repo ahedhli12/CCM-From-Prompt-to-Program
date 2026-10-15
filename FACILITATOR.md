@@ -1,24 +1,29 @@
-# From Prompt to Program robot workshop
+# From Prompt to Program event app workshop
 
-## Purpose
-First-time programmers describe a robot to Copilot, run Python to see the result, and check small changes. Success means a visible robot with chosen colors and one personal detail. Participants use only my_project.py.
+## Audience and purpose
+Adults with no programming experience. One 55-minute session. Participants use Copilot to create or modify a small graphical Event Budget Planner. They learn to describe behavior, run code, check a result and request one improvement. They do not need to learn all of Tkinter.
 
-## Required setup check
-On the actual lab image and training accounts, run my_project.py in local desktop VS Code. Confirm that the turtle/Tk window opens, the robot appears, and closing the window allows another run. Check Git, Python extension, Copilot access and the selected interpreter. No pip packages are needed, but Python must include Tk and a graphical display. If graphics fails, resolve it before the workshop or pair participants at a working computer. Do not substitute a terminal-only or notebook runner without checking turtle support.
+## Before the session
+On the actual training computers and accounts, confirm Git, Python 3, the VS Code Python extension and Copilot. Run my_project.py and check that its Tkinter window opens, calculates and closes. Python needs Tk and a graphical display. No pip packages are needed. Keep credentials separate. Have the working repository example available as a fallback.
 
-## 60 minute flow
-0–5: Show the starter robot. Ask what colors or funny details the audience would choose.
-5–15: Clone your repository together. Open my_project.py, run it, and find the drawing window.
-15–25: Use prompt 1 in PROMPTS.md to create a robot with AI. Review and apply the edit, save, run, and compare the image against the requested parts.
-25–35: Use prompt 2 with chosen colors. Explain that participants control the design. Show color() as one small readable command.
-35–45: Add one detail with prompt 3. Keep requests small and inspect the result.
-45–55: Partners request one surprise change, then share a 20-second robot introduction.
-55–60: Complete the handout checklist and save my_project.py to personal approved storage. No push to your repository is needed.
+## Agenda
+0–5: Demo a $300 event for 20 people. Let the room choose food costs.
+5–15: Guide Git: Clone, open my_project.py and run the working example.
+15–25: Explain prompt, program and app. Use the main prompt to generate a version in the same file. Say clearly that the file already has a working example and applying AI's edit replaces or modifies it.
+25–35: Check the known examples, then a blank field or a word.
+35–45: Each participant requests one change: event title/colors, cost per attendee, or Clear button.
+45–55: Partners plan a 20-person event within $300, share briefly, and save their file outside temporary training accounts.
 
-## Teaching notes
-Explain prompt as a request and program as runnable instructions. AI generates code, and turtle draws from that code. The picture is a Python drawing, not an AI-generated image. Distinguish Copilot Chat, the editor and the separate drawing window. Close the drawing window before rerunning. Avoid requiring participants to memorize coordinates, loops or syntax.
+## Known calculations
+20 people, $10 food/person, $50 supplies, $300 budget: $250 total, $50 remaining.
+20 people, $15 food/person, $50 supplies, $300 budget: $350 total, $50 over.
+20 people, $12.50 food/person, $50 supplies, $300 budget: $300 total, $0 remaining.
+Blank, nonnumeric, negative or infinite costs should show a helpful message. Zero attendees should be rejected.
 
-The provided robot is a working fallback if AI access fails. Participants can change color names directly with guidance. Ask for the exact error before debugging. Restrict additions to a hat, antenna, balloon or similarly small detail. Keep turtle.done() last and penup() before repositioning without a line.
+## Teaching
+Say: "You choose what the app does. Copilot helps write the code. We check the result."
+Explain fields as input, Calculate as an action, and the result label as output. A small function is necessary to handle a button click; explain it as the instructions the button runs. Do not forbid functions or expect participants to memorize them.
+Prompts go in Copilot Chat. Numbers go in app fields. Save and close the old window before running again.
 
-## Assignment
-A visible robot, a color change, one fun detail, a check against the prompt, and a saved Python file. Let participants say a robot name aloud instead of adding text to code.
+## Fallback
+If AI access fails, use the working app and guide a title or color change. For Tk/display problems, use a computer already tested rather than trying repeated code rewrites. Keep additions small. No turtle or robot activities are part of this session.
