@@ -1,6 +1,6 @@
 """A fictional campus adventure. Change the story with AI."""
 name = input("Explorer name: ").strip() or "Explorer"
-print(f"\nWelcome, {name}! The campus mascot has hidden a mystery prize.")
+print("\nWelcome,", name, "! The campus mascot has hidden a mystery prize.")
 print("A clue points toward the library and the cafe.")
 choice = input("Where do you go? Type library or cafe: ").strip().lower()
 
