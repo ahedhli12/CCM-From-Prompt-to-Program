@@ -1,3 +1,3 @@
-"""Your space to create. Use the first prompt in PROMPTS.md."""
-# Ask AI for a short adventure, review its code, and put it here.
-# Save this file before running it.
+"""Your Rock, Paper, Scissors game goes here."""
+# Copy the main project prompt from README.md into Copilot Chat.
+# Review the suggested code, put it here, save, and run.
