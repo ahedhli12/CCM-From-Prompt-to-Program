@@ -1,28 +1,24 @@
-# From Prompt to Program facilitator guide
+# From Prompt to Program robot workshop
 
-## Session purpose
-Help people who have never programmed turn a plain-language request into a short Python story. Success means running a story, requesting one change, and checking the result. Use one Python file throughout: my_project.py.
+## Purpose
+First-time programmers describe a robot to Copilot, run Python to see the result, and check small changes. Success means a visible robot with chosen colors and one personal detail. Participants use only my_project.py.
 
-Opening words: "Today you will give AI an idea and see it become a program. We will make funny stories together. You do not need to memorize code."
+## Required setup check
+On the actual lab image and training accounts, run my_project.py in local desktop VS Code. Confirm that the turtle/Tk window opens, the robot appears, and closing the window allows another run. Check Git, Python extension, Copilot access and the selected interpreter. No pip packages are needed, but Python must include Tk and a graphical display. If graphics fails, resolve it before the workshop or pair participants at a working computer. Do not substitute a terminal-only or notebook runner without checking turtle support.
 
-## Preparation
-Test Git, Python 3, the VS Code Python extension, and Copilot with the actual training accounts. Clone the repository and run my_project.py. Increase the editor and terminal font sizes. Keep credentials separate from public files.
+## 60 minute flow
+0–5: Show the starter robot. Ask what colors or funny details the audience would choose.
+5–15: Clone your repository together. Open my_project.py, run it, and find the drawing window.
+15–25: Use prompt 1 in PROMPTS.md to create a robot with AI. Review and apply the edit, save, run, and compare the image against the requested parts.
+25–35: Use prompt 2 with chosen colors. Explain that participants control the design. Show color() as one small readable command.
+35–45: Add one detail with prompt 3. Keep requests small and inspect the result.
+45–55: Partners request one surprise change, then share a 20-second robot introduction.
+55–60: Complete the handout checklist and save my_project.py to personal approved storage. No push to your repository is needed.
 
-## 60 minute session
-0–5: Run the starter story. Ask the room for a made-up name, animal, and food. Read the result aloud. Explain that all events are fictional.
-5–15: Guide everyone through Git: Clone in README.md. Open only my_project.py. Run it and answer in the terminal. Pair people who need setup support.
-15–30: Explain prompt as a request and program as runnable code. Show the difference between Copilot Chat and the Python terminal. Participants choose a setting and use the main prompt. Review and apply the edit, save, and run.
-30–40: Partners take turns providing answers. Check whether the output uses all three answers and the requested setting.
-40–50: Partners suggest a surprising ending and ask AI to change just the last line. Run again.
-50–60: Invite a few story readings. Ask "What did you ask AI to change?" Help everyone save my_project.py to their own approved storage.
+## Teaching notes
+Explain prompt as a request and program as runnable instructions. AI generates code, and turtle draws from that code. The picture is a Python drawing, not an AI-generated image. Distinguish Copilot Chat, the editor and the separate drawing window. Close the drawing window before rerunning. Avoid requiring participants to memorize coordinates, loops or syntax.
 
-## Explain only what they need
-input() asks. A variable remembers. print() displays. Demonstrate print("Welcome,", name). Use commas rather than f-strings. Keep the required activity free of conditions, loops, random choices, functions and packages.
+The provided robot is a working fallback if AI access fails. Participants can change color names directly with guidance. Ask for the exact error before debugging. Restrict additions to a hat, antenna, balloon or similarly small detail. Keep turtle.done() last and penup() before repositioning without a line.
 
-## Support
-If AI access fails, participants can change the quoted story sentences directly while you demonstrate. Keep the working starter available through the repository. If a computer cannot run Python, pair its participant with someone who has it working.
-
-Ask for the actual error before debugging. Help with one issue at a time. Do not turn the session into a syntax lecture or add extra challenges just because one pair finishes early. An optional favorite-place question is enough.
-
-## Closing
-Emphasize that participants chose the idea and checked the result. The saved file is their takeaway. They do not need to push to the instructor repository.
+## Assignment
+A visible robot, a color change, one fun detail, a check against the prompt, and a saved Python file. Let participants say a robot name aloud instead of adding text to code.
