@@ -1,4 +1,4 @@
-"""Your first program. Run it, then change one message."""
-name = input("What should we call you? ")
-print(f"Welcome, {name}! You are now a Python creator.")
-print("My first mission: build something fun with AI!")
+"""Run this file, then change the welcome message."""
+name = input("What is your name? ")
+print("Welcome,", name)
+print("Today we will create a game with AI!")
