@@ -1,43 +1,42 @@
-# From Prompt to Coding: Coding with AI
+# From Prompt to Program: Coding with AI
 
-**County College of Morris • Professor Amjed Hedhli**
+**County College of Morris**  
+**Professor Amjed Hedhli**
 
-## What is this session about?
+No programming experience needed. Today you will use AI to help create a funny Python story, run it, and make it your own.
 
-You will learn how to describe a program to AI, run the Python code it creates, and check whether it works. No previous coding experience is required.
+## Our project: Silly Campus News
 
-Our practice project is **Rock, Paper, Scissors**. You choose a move, the computer chooses a move at random, and the program announces the result. The game is a small example you can play and change during the session.
+Imagine arriving at CCM with a talking penguin and opening a restaurant that serves only tacos. Your program turns three answers into a silly news story.
 
-**Copilot helps write the code. Python runs the game. You decide what the game should do and check the result.** The computer's random move is not an AI prediction.
-
-## The game rules
-
-- Rock beats scissors.
-- Scissors beats paper.
-- Paper beats rock.
-- Matching choices produce a tie.
+You only need **one Python file: my_project.py**.
 
 Example:
 
 ```text
-Choose rock, paper, or scissors: rock
-You chose rock
-The computer chose scissors
-You win!
+Enter a made-up name: Captain Noodle
+Enter an animal: penguin
+Enter a food: tacos
+
+BREAKING NEWS FROM CCM!
+Captain Noodle arrived on campus with a talking penguin
+They opened a restaurant that serves only tacos
+The college president ordered 100 plates!
 ```
 
-## Our 60-minute session
+The story is fictional. There is no right or wrong funny answer.
 
-| Time | What we will do |
-|---|---|
-| 0–5 minutes | Play a live demonstration together |
-| 5–15 minutes | Clone the repository and run a tiny welcome program |
-| 15–25 minutes | Describe the game to Copilot and review its code |
-| 25–40 minutes | Run your game and check the results with a partner |
-| 40–50 minutes | Ask AI for one small change and test it |
-| 50–60 minutes | Share your game and save your work |
+## What does From Prompt to Program mean?
 
-## 1. Clone this repository
+A **prompt** is a request you give AI. A **program** is code you run on your computer.
+
+You describe the story you want in Copilot Chat. Copilot suggests Python code. You run the code and see whether the story matches your idea.
+
+**Your job today:** choose the idea, try the program, and tell AI what you want to change.
+
+## 1. Clone the workshop repository
+
+Follow along with the facilitator:
 
 1. Open **VS Code**.
 2. Press **Ctrl+Shift+P** on Windows or **Cmd+Shift+P** on Mac.
@@ -51,75 +50,92 @@ You win!
 5. Choose a folder on your computer.
 6. Select **Open** when cloning finishes.
 
-Everyone clones the instructor's repository. You do not need to create another repository or push to this one. Ask the facilitator for help if Git, Python, or Copilot is unavailable.
+Cloning copies the workshop files to your computer. Everyone uses this same repository. Ask the facilitator for help with setup.
 
-## 2. Your first small success
+## 2. Play with the starter story
 
-Open **hello.py** and click **Run Python File in Terminal** at the top right. Select the provided Python interpreter if prompted.
+1. Open **my_project.py** in the file list on the left.
+2. Click **Run Python File in Terminal** at the top right. If asked, select the Python interpreter provided for the session.
+3. Click in the **terminal** at the bottom of VS Code.
+4. Type an answer to each question and press **Enter**.
+5. Read your silly news story!
 
-Click in the terminal at the bottom, enter your name, and press Enter. Change the welcome message, save, and run again.
+Run it again with different answers. Compare your story with a partner.
 
-We use commas to display text and variables:
+## 3. Give AI your idea
+
+Choose a new setting:
+
+- A restaurant on the moon.
+- A zoo run by students.
+- A superhero's first day at CCM.
+- Your own silly idea.
+
+Open **GitHub Copilot Chat** and paste this prompt, replacing the words in brackets:
+
+> I have never programmed before. Change my_project.py into a short, funny story about [my idea]. Keep the three questions about a made-up name, an animal, and a food. Use only input(), variables, and print(). Use separate print() arguments with commas, not f-strings. Keep the program under 12 lines. Explain the changes in simple language.
+
+If Copilot suggests an edit, review and apply it. If it displays code only in chat, copy just the Python code into **my_project.py**. Save the file.
+
+**Prompts go in Copilot Chat. Answers to the story questions go in the terminal.**
+
+## 4. Run your new story
+
+Run **my_project.py** again and answer the questions.
+
+Check:
+- Does the story use the name, animal, and food you typed?
+- Does it use your chosen setting?
+
+If it does not, tell Copilot what you wanted and what actually happened.
+
+## 5. The funny ending challenge
+
+Ask your partner to suggest a surprising ending. Then ask Copilot:
+
+> Change only the last line of my story to [our funny ending]. Keep the code simple and use commas in print().
+
+Save and run again. Share your favorite story with the room!
+
+## Three things to recognize
+
+| In the code | What it does |
+|---|---|
+| input() | Asks a question |
+| A variable, such as name | Remembers an answer |
+| print() | Displays the story |
+
+For example:
 
 ```python
 print("Welcome,", name)
 ```
 
-## 3. Ask AI to create your game
+This displays the word Welcome followed by the answer stored in name. You do not need to memorize the code today.
 
-Open **GitHub Copilot Chat** and copy this prompt:
+## If you get stuck
 
-> I am new to Python. Create a short Rock, Paper, Scissors game in my_project.py. Ask for rock, paper, or scissors. Use random.choice() to choose for the computer. Show both choices and say whether I win, lose, or tie. Show a helpful message for an invalid choice. Use simple if/elif/else and print() with separate arguments joined by commas. Do not use f-strings, functions, classes, or loops in this first version. Explain each section in plain language.
+- **The program seems to stop:** it may be waiting for your answer in the terminal.
+- **Your new story does not appear:** save and make sure you are running my_project.py.
+- **You see an error:** ask the facilitator, or copy your code and full error into Copilot Chat:
 
-Review the suggested code. Apply the suggested edit to **my_project.py**, or copy only the Python code from chat into that file. Save and run **my_project.py**.
+> I am a beginner. Here is my code and error: [paste both]. Explain the problem simply and help me fix it. Keep the program short.
 
-**Type requests to AI in Copilot Chat. Type your game choice in the terminal.**
+## Before you leave
 
-You can open **rock_paper_scissors.py** for a working example if you get stuck. You do not need to type the whole game from memory.
+Save **my_project.py** to your own approved storage so you keep it after leaving the training account. You do not need to create a new repository or push to the instructor's repository.
 
-## 4. Play and check
+**You succeeded if you ran a story, asked AI for one change, and checked the result.**
 
-Take turns with a partner. Play three rounds by running the file again after each round. For each round, compare the displayed choices against the rules above. Random choices mean you may not see every possible result in three rounds.
+## Session plan
 
-Then type **banana** as your choice. Does the game explain which choices are allowed?
-
-If a result looks wrong, tell Copilot what you entered, what the computer chose, and what the correct result should have been. Run again after the fix.
-
-## 5. Request one small change
-
-Choose one:
-- Add your name to the winning message.
-- Make the winning and losing messages funny.
-- Accept uppercase answers such as ROCK.
-
-Prompt:
-
-> Add [my chosen change] to my game. Keep it simple. Use comma-separated print() arguments, not f-strings. Explain what changed and give me a test to try.
-
-Save, run, and check the change. A score counter or play-again loop is optional only if time remains.
-
-## 6. Share and save
-
-Show your partner one change and explain one line of code in your own words. Save **my_project.py** to your own approved storage before leaving the training account.
-
-## A few Python words
-
-| Term | Meaning in our game |
+| Time | Activity |
 |---|---|
-| input() | Asks you to type a move |
-| Variable | Remembers a move |
-| random.choice() | Selects one move at random |
-| if / elif / else | Checks which result to display |
-| print() | Displays the choices and result |
+| 0–5 minutes | Audience supplies funny answers for a live demo |
+| 5–15 minutes | Clone the repository and run the starter story |
+| 15–30 minutes | Choose a setting and ask Copilot to change the program |
+| 30–40 minutes | Swap answers with a partner and check the story |
+| 40–50 minutes | Create a surprising ending |
+| 50–60 minutes | Share stories and save your work |
 
-## Help
-
-If nothing happens, check whether the terminal is waiting for your answer. If changes do not appear, save and confirm you are running the correct file.
-
-For errors, ask Copilot:
-
-> Here is my code and the full error: [paste both]. Explain the problem in simple language and suggest the smallest fix.
-
-The lab needs Git, Python 3, the VS Code Python extension, and Copilot access. No extra Python packages are required. Keep account credentials out of prompts and repository files.
-
-**Workshop files:** hello.py is your warm-up, my_project.py is your workspace, rock_paper_scissors.py is a working example, and PROMPTS.md contains prompts to copy. FACILITATOR.md contains the instructor's session guide.
+The facilitator will help with Git, Python, and Copilot access. No extra Python packages are needed. More copyable prompts are in PROMPTS.md.
