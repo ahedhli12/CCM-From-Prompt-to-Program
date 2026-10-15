@@ -122,4 +122,4 @@ For errors, ask Copilot:
 
 The lab needs Git, Python 3, the VS Code Python extension, and Copilot access. No extra Python packages are required. Keep account credentials out of prompts and repository files.
 
-**Current activity:** follow this README and PROMPTS.md. The older adventure.py example and adventure-based presentation and handout are earlier materials and do not match this game session.
+**Workshop files:** hello.py is your warm-up, my_project.py is your workspace, rock_paper_scissors.py is a working example, and PROMPTS.md contains prompts to copy. FACILITATOR.md contains the instructor's session guide.
