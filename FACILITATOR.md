@@ -1,21 +1,22 @@
-# Facilitator guide
+# Rock Paper Scissors session guide
 
-## Before participants arrive
-Test the actual training accounts, Copilot access and Python interpreter in the lab image. Open the project in VS Code and run both examples. Have an extracted ZIP available locally. Keep credentials separate from the public repository. Use a large terminal font and disable notifications during the demo.
+## Purpose
+Say: "Today you will describe a game to AI, run the Python program it creates, and check one improvement. You do not need to memorize Python."
+Copilot assists with writing code. Python runs the game. The computer move uses random selection, not AI prediction.
 
-## Opening
-Ask: "Who has never written a line of code?" Explain that today they will direct the program and check whether it behaves as intended. Run adventure.py, let the room vote library or cafe, and ask what the next ending might be.
+## Preparation
+Test Git, Python, the Python extension, and the actual training account's Copilot access. Clone the repository and run hello.py and rock_paper_scissors.py. Increase terminal font size. Keep account credentials separate.
 
-## Delivery
-Follow the agenda in README.md. Keep the first personal success within 10 minutes. Explain input as asking, a variable as a named place for a value, print as displaying, and if as a choice. Avoid a syntax lecture. Demo a vague prompt, then replace it with the scoped prompt in PROMPTS.md.
+## 60 minute agenda
+0–5: Run rock_paper_scissors.py and let the room choose a move. Explain the three rules and ties.
+5–15: Everyone clones your repository through Git: Clone. Run hello.py, change a message, save and rerun.
+15–25: Open Copilot Chat. Use the main prompt in README.md to create my_project.py. Review and apply code. Explain input as asking, variables as remembering, if as choosing a result, and print as displaying.
+25–40: Partners run three rounds, checking each outcome. Swap who operates the computer. Try banana and look for helpful feedback. Three random rounds do not cover all outcomes.
+40–50: Request one small change from the README. Use comma-separated print() arguments throughout. Test the changed behavior.
+50–60: Invite short showcases. Ask each pair to explain one line and save my_project.py to their own approved storage. No push to your repository is required.
 
-Use my_project.py for AI-generated work and keep adventure.py available as a working backup. Run one change before requesting another. Pair novices with patient partners and swap driver/tester roles. Let pairs choose funniest ending, most surprising twist or clearest instructions, with applause rather than ranking coding ability.
+## Backup and testing
+Use rock_paper_scissors.py if AI access fails. Learners can edit result messages and still complete the activity. For a deliberate winner test, temporarily replace the computer assignment with computer = "scissors", try rock, paper and scissors, then restore random.choice(). This produces win, loss and tie respectively.
 
-## Testing reference
-library/open: golden ticket. library/leave: mystery remains. cafe/listen: library clue. cafe/dance: dance contest. Uppercase and spaces work in the example. Blank nickname becomes Explorer. Unexpected answers show a helpful message and end. The starting example does not automatically ask again or repeat the game.
-
-## If time is short
-For 45 minutes, use the existing adventure as the main project and personalize it. For 75–90 minutes, add play-again or a simple subject quiz after the showcase. Keep the budget calculator as a later practical project.
-
-## Closing
-Ask each pair to share the idea, one change, and one test in 30 seconds. Ask: "What did you decide that the AI could not decide for you?" Have everyone save their .py file to their own approved storage before leaving a temporary account. An optional Git commit can happen after the session.
+## Scope
+Keep the required game to one round. Score counters and play-again loops are optional. The older adventure materials do not match this session and should not be used as its handout or slides.
