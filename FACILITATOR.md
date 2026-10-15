@@ -19,4 +19,4 @@ Test Git, Python, the Python extension, and the actual training account's Copilo
 Use rock_paper_scissors.py if AI access fails. Learners can edit result messages and still complete the activity. For a deliberate winner test, temporarily replace the computer assignment with computer = "scissors", try rock, paper and scissors, then restore random.choice(). This produces win, loss and tie respectively.
 
 ## Scope
-Keep the required game to one round. Score counters and play-again loops are optional. The older adventure materials do not match this session and should not be used as its handout or slides.
+Keep the required game to one round. Score counters and play-again loops are optional.
