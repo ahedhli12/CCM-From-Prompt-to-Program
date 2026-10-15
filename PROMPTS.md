@@ -1,22 +1,16 @@
-# Prompts you can copy
+# Rock Paper Scissors prompts
 
-## First program
-I have never programmed before. Create a Python program that asks for my nickname and prints a funny welcome message. Use only input, a variable, and print. Keep it under 6 lines. Explain where to put the code and how to run it in VS Code.
+## Create the game
+I am new to Python. Create a short Rock, Paper, Scissors game in my_project.py. Ask for rock, paper, or scissors. Use random.choice() to choose for the computer. Show both choices and say whether I win, lose, or tie. Show a helpful message for an invalid choice. Use simple if/elif/else and print() with separate arguments joined by commas. Do not use f-strings, functions, classes, or loops in this first version. Explain each section in plain language.
 
-## Main project
-Help me create a funny fictional campus choose-your-adventure game in Python. Ask for a nickname, offer library or cafe as the first choice, then offer one more choice on each path. Include different endings and a helpful message for unexpected input. Use basic Python, no external libraries, and around 30 lines. Explain each section in plain language. Put the code in my_project.py.
+## Explain
+Explain my game in plain language. Point out where it asks for my move, picks the computer move, checks the winner, and displays the result. Ask me to predict one result.
 
-## Personalize
-Change only the story theme to [space rescue / haunted campus / talking animals / my idea]. Keep the program short and keep the same choices working. Explain what changed and give me two tests.
-
-## Improve
-Add one feature: accept uppercase answers and extra spaces. Explain the change and give me example inputs to check it.
+## Change one feature
+Add [my name to the winning message / funny result messages / support for uppercase input]. Keep the change small. Use comma-separated print() arguments, not f-strings. Explain the change and suggest a test.
 
 ## Debug
-I expected [result], but I got [actual result]. Here is my code and the full error: [paste]. Explain the cause in plain language, suggest the smallest fix, and tell me how to check it.
+I chose [move]. The computer chose [move]. I expected [result] but got [result]. Here is my code: [paste]. Explain the cause and the smallest fix.
 
-## Understand
-Explain this code to someone who has never programmed. What information goes in, what decision happens, and what comes out? Ask me to predict one result before explaining it.
-
-## Optional stretch
-Help me add a play-again option using a simple loop. Explain the loop first and keep changes small. Show me how to exit the game.
+## Optional extra
+Help me add a play-again loop with an exit option. Explain the loop first. Keep print() arguments separated by commas.
