@@ -1,22 +1,28 @@
-# Rock Paper Scissors session guide
+# From Prompt to Program facilitator guide
 
-## Purpose
-Say: "Today you will describe a game to AI, run the Python program it creates, and check one improvement. You do not need to memorize Python."
-Copilot assists with writing code. Python runs the game. The computer move uses random selection, not AI prediction.
+## Session purpose
+Help people who have never programmed turn a plain-language request into a short Python story. Success means running a story, requesting one change, and checking the result. Use one Python file throughout: my_project.py.
+
+Opening words: "Today you will give AI an idea and see it become a program. We will make funny stories together. You do not need to memorize code."
 
 ## Preparation
-Test Git, Python, the Python extension, and the actual training account's Copilot access. Clone the repository and run hello.py and rock_paper_scissors.py. Increase terminal font size. Keep account credentials separate.
+Test Git, Python 3, the VS Code Python extension, and Copilot with the actual training accounts. Clone the repository and run my_project.py. Increase the editor and terminal font sizes. Keep credentials separate from public files.
 
-## 60 minute agenda
-0–5: Run rock_paper_scissors.py and let the room choose a move. Explain the three rules and ties.
-5–15: Everyone clones your repository through Git: Clone. Run hello.py, change a message, save and rerun.
-15–25: Open Copilot Chat. Use the main prompt in README.md to create my_project.py. Review and apply code. Explain input as asking, variables as remembering, if as choosing a result, and print as displaying.
-25–40: Partners run three rounds, checking each outcome. Swap who operates the computer. Try banana and look for helpful feedback. Three random rounds do not cover all outcomes.
-40–50: Request one small change from the README. Use comma-separated print() arguments throughout. Test the changed behavior.
-50–60: Invite short showcases. Ask each pair to explain one line and save my_project.py to their own approved storage. No push to your repository is required.
+## 60 minute session
+0–5: Run the starter story. Ask the room for a made-up name, animal, and food. Read the result aloud. Explain that all events are fictional.
+5–15: Guide everyone through Git: Clone in README.md. Open only my_project.py. Run it and answer in the terminal. Pair people who need setup support.
+15–30: Explain prompt as a request and program as runnable code. Show the difference between Copilot Chat and the Python terminal. Participants choose a setting and use the main prompt. Review and apply the edit, save, and run.
+30–40: Partners take turns providing answers. Check whether the output uses all three answers and the requested setting.
+40–50: Partners suggest a surprising ending and ask AI to change just the last line. Run again.
+50–60: Invite a few story readings. Ask "What did you ask AI to change?" Help everyone save my_project.py to their own approved storage.
 
-## Backup and testing
-Use rock_paper_scissors.py if AI access fails. Learners can edit result messages and still complete the activity. For a deliberate winner test, temporarily replace the computer assignment with computer = "scissors", try rock, paper and scissors, then restore random.choice(). This produces win, loss and tie respectively.
+## Explain only what they need
+input() asks. A variable remembers. print() displays. Demonstrate print("Welcome,", name). Use commas rather than f-strings. Keep the required activity free of conditions, loops, random choices, functions and packages.
 
-## Scope
-Keep the required game to one round. Score counters and play-again loops are optional.
+## Support
+If AI access fails, participants can change the quoted story sentences directly while you demonstrate. Keep the working starter available through the repository. If a computer cannot run Python, pair its participant with someone who has it working.
+
+Ask for the actual error before debugging. Help with one issue at a time. Do not turn the session into a syntax lecture or add extra challenges just because one pair finishes early. An optional favorite-place question is enough.
+
+## Closing
+Emphasize that participants chose the idea and checked the result. The saved file is their takeaway. They do not need to push to the instructor repository.
