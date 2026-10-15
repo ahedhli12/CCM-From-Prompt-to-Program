@@ -1,109 +1,106 @@
 # From Prompt to Program: Coding with AI
 
-**Design Your Own Robot**  
-County College of Morris • Professor Amjed Hedhli
+**A 55-minute workshop with Prof. Hedhli • County College of Morris**
 
-No programming experience needed. Give GitHub Copilot an idea, run the Python program, and watch your robot appear in a drawing window.
+## Build a real app window
 
-**Your mission:** create a robot, choose its colors, and add one fun detail. Everyone works in one file: **my_project.py**.
+Create an **Event Budget Planner** with text fields, a Calculate button, and a result that shows whether your event fits your budget.
 
-## 1. Clone the repository
+No programming experience needed. You will describe an app to GitHub Copilot, run the Python code, check its answer, and request one improvement. You do not need to understand every line.
 
-Follow the facilitator:
+**The challenge: plan an event for 20 people with $300.**
 
-1. Open **VS Code**.
-2. Press **Ctrl+Shift+P** (Windows) or **Cmd+Shift+P** (Mac).
-3. Select **Git: Clone** and paste:
+## 1 Clone this repository
+
+1. Open VS Code.
+2. Press **Ctrl+Shift+P** on Windows or **Cmd+Shift+P** on Mac.
+3. Choose **Git: Clone** and paste:
 
    ```text
    https://github.com/ahedhli12/CCM-From-Prompt-to-Program.git
    ```
 
-4. Choose a folder and select **Open** after cloning.
+4. Choose a folder, then select **Open**.
 
-Cloning copies the workshop to your computer. You do not need to create another repository.
+Everyone clones the same instructor repository. No new repository or push is required.
 
-## 2. See a robot first
+## 2 Try the working app
 
-Open **my_project.py** and choose **Run Python File in Terminal** at the top right. Select the provided Python interpreter if asked.
+Open **my_project.py** and select **Run Python File in Terminal**. Choose the provided Python interpreter if asked. A separate app window opens, possibly behind VS Code.
 
-A separate window should show a blue-headed robot with an orange body. You do not need to understand every line yet.
+Click **Calculate my event** with the sample values:
+- 20 attendees
+- $10 food per person
+- $50 supplies
+- $300 budget
 
-**Close the drawing window before running the file again.** If no drawing window appears, ask the facilitator for help.
+**Expected result: $250 total and $50 remaining.**
 
-## 3. Your first prompt
+Try $15 food per person. The total should be **$350**, which is **$50 over budget**.
 
-Open **GitHub Copilot Chat** and copy:
+The file already contains a working example so you can see the goal. You will use a prompt to recreate or change it, then compare the result. Close the app window before running again.
 
-> I have never programmed before. In my_project.py, use Python turtle to draw a friendly robot with a square head, a rectangular body, two eyes, arms, and legs. Use simple turtle commands and named colors. Keep the whole robot inside a 700 by 600 window. Do not use external packages, loops, custom functions, or classes. Finish with turtle.done() so the window stays open. Explain how to run it in VS Code and briefly explain the drawing sections.
+## 3 Your app prompt
 
-Review and apply Copilot's suggested edit to **my_project.py**. If it only shows code in chat, copy only the Python code into that file. Save, then run it.
+Open **GitHub Copilot Chat** and paste:
 
-**Check:** can you see a head, body, two eyes, arms, and legs?
+> I have never programmed before. In my_project.py, create a small Python Tkinter event budget app. Include labeled fields for number of attendees, food cost per person, supplies cost, and available budget. Add a Calculate button. Show the total cost and how much is left or how far over budget I am. Start with 20 attendees, $10 food per person, $50 supplies, and a $300 budget. Handle blank, nonnumeric, negative, and non-finite input with a helpful message. Require at least one attendee. Use only the standard library, a readable window, clear variable names, and brief comments. Explain how to run it in VS Code. If you use print(), separate arguments with commas, not f-strings.
 
-A prompt is your request to AI. The program is the Python code you run. Copilot helps write the instructions, and Python draws the picture.
+Copilot may suggest replacing the current example. Review and apply that edit to **my_project.py**, or copy only the Python code into the file if it appears only in chat. Save, close the old app, and run again.
 
-## 4. Your colors
+**Prompt = your request. Program = the Python code. App = the window you use.** Copilot helps write the code; Python calculates the budget.
 
-Copy this prompt and replace the colors if you like:
+## 4 Check it works
 
-> Change only my robot's head to purple and body to orange. Keep the other parts and the drawing window the same. Explain which lines changed.
+Try both examples above. Then try a word or blank field. Your app should explain what needs fixing instead of stopping with an error.
 
-Save, close the old drawing window, and run again. Did both colors change as requested?
+Type requests to AI in **Copilot Chat**. Type event numbers into the **app's fields**.
 
-## 5. One fun detail
+## 5 Make it useful to you
 
-Choose **one**: a hat, an antenna, or a balloon.
+Choose ONE change:
+- Give the app your event's name and chosen colors.
+- Add a result showing the cost per attendee.
+- Add a Clear button.
 
-> Add [a small hat / one antenna / a balloon] to my robot. Keep the existing robot and fit everything inside the window. Use simple turtle commands. Keep turtle.done() at the very end. Explain what changed.
+Copy:
 
-Replace the bracketed choices with your selection. Save and run again. Can you see your new detail and the original robot?
+> Update my_project.py to [my chosen change]. Keep the existing calculation and input checks working. Explain what changed and give me one test.
 
-## 6. The partner surprise
+Save, close the old window, run, and check.
 
-Ask your partner to suggest one small change, such as red shoes or a green hat. Describe it to Copilot in your own words. Run your code and compare the picture with the request.
+## 6 The $300 partner challenge
 
-Give your robot a name and introduce it in a 20-second gallery showcase. You may simply say its name aloud.
+Pick an event: a student club meetup, faculty workshop, or celebration. Keep 20 attendees and the $300 limit. Choose food and supply costs that fit. Take turns changing the numbers.
 
-## Your assignment checklist
+In 20 seconds, share your event, total cost, and one change you asked AI to make.
 
-- [ ] I ran a robot drawing.
-- [ ] I used a prompt to change its colors.
-- [ ] I added one fun detail.
-- [ ] I checked that the drawing matches my requests.
-- [ ] I shared my robot and saved my file.
+## Completion checklist
 
-Save **my_project.py** to your own approved storage before leaving the training account. No push to the instructor repository is needed.
+- [ ] I ran the app and checked the $250 example.
+- [ ] I tested an over-budget plan.
+- [ ] I requested one change and checked it.
+- [ ] I saved my_project.py to my own approved storage.
 
-## If you get stuck
+## Our 55 minutes
 
-- Close the old drawing window before running again.
-- Save and confirm you are running **my_project.py**.
-- A drawing window may open behind VS Code.
-- For a small drawing problem or error, ask:
-
-> I asked for [describe my idea], but I see [describe what happened]. Here is my code and any error: [paste]. Help me make the smallest fix. Explain it in plain language.
-
-If you see **No module named _tkinter**, **no display**, or a similar graphics setup error, ask the facilitator. You do not need to install anything yourself.
-
-## A few drawing words
-
-| Command | Meaning |
+| Minutes | Activity |
 |---|---|
-| color() | Chooses a color |
-| goto() | Moves to a place in the window |
-| penup() | Moves without drawing a line |
-| pendown() | Draws while moving |
-| stamp() | Leaves a copy of a shape |
-| done() | Keeps the drawing window open |
+| 0–5 | Live app demonstration |
+| 5–15 | Clone and run the example |
+| 15–25 | Use the app prompt in Copilot |
+| 25–35 | Check calculations and unexpected input |
+| 35–45 | Make one personal improvement |
+| 45–55 | Partner challenge, sharing, and saving |
 
-You do not need to memorize commands. Ask Copilot to explain one line at a time. If you use print(), separate text and variables with commas rather than f-strings.
+## Help
 
-## Workshop files
+Save before running. Close the previous app window first. If no window appears, look behind VS Code and ask the facilitator.
 
-- **my_project.py**: your robot and all your changes
-- **PROMPTS.md**: prompts you can copy
-- **FACILITATOR.md**: setup and session guide for the instructor
-- **handouts/CCM-Robot-Workshop-Handout.docx**: printable participant instructions
+For a code problem, copy this into Copilot:
 
-**Setup for the facilitator:** test Python turtle and its Tk drawing window on the actual workshop computers before the session. Use local desktop Python in VS Code. This activity needs a graphical display and Tk support. It uses the Python standard library and needs no pip packages.
+> I expected [result], but got [actual result]. Here is my code and full error: [paste]. Help me make the smallest fix and explain it simply.
+
+Missing Tk/_tkinter or display errors need facilitator setup help. Use desktop Python with Tk support, not a terminal-only remote environment. No pip packages are needed.
+
+**Files:** my_project.py is the only Python file. PROMPTS.md contains copyable prompts and FACILITATOR.md contains the instructor guide. This activity uses Tkinter, with no turtle graphics.
