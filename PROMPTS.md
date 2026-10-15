@@ -1,16 +1,18 @@
-# Rock Paper Scissors prompts
+# Silly Campus News prompts
 
-## Create the game
-I am new to Python. Create a short Rock, Paper, Scissors game in my_project.py. Ask for rock, paper, or scissors. Use random.choice() to choose for the computer. Show both choices and say whether I win, lose, or tie. Show a helpful message for an invalid choice. Use simple if/elif/else and print() with separate arguments joined by commas. Do not use f-strings, functions, classes, or loops in this first version. Explain each section in plain language.
+## A new setting
+I have never programmed before. Change my_project.py into a short, funny story about [my idea]. Keep the three questions about a made-up name, an animal, and a food. Use only input(), variables, and print(). Use separate print() arguments with commas, not f-strings. Keep the program under 12 lines. Explain the changes in simple language.
 
-## Explain
-Explain my game in plain language. Point out where it asks for my move, picks the computer move, checks the winner, and displays the result. Ask me to predict one result.
+Ideas: a restaurant on the moon, a zoo run by students, a superhero's first day at CCM.
 
-## Change one feature
-Add [my name to the winning message / funny result messages / support for uppercase input]. Keep the change small. Use comma-separated print() arguments, not f-strings. Explain the change and suggest a test.
+## A surprising ending
+Change only the last line of my story to [our funny ending]. Keep the code simple and use commas in print().
 
-## Debug
-I chose [move]. The computer chose [move]. I expected [result] but got [result]. Here is my code: [paste]. Explain the cause and the smallest fix.
+## An explanation
+Explain one line of my program in everyday language. Show where my answer is remembered and where it appears in the story.
 
-## Optional extra
-Help me add a play-again loop with an exit option. Explain the loop first. Keep print() arguments separated by commas.
+## Help with an error
+I am a beginner. Here is my code and the full error: [paste both]. Explain the problem simply and suggest the smallest fix. Keep the program short.
+
+## Optional extra question
+Help me add one question about a favorite place and use the answer in my story. Use only input(), variables, and comma-separated print() arguments. Explain the new lines.
