@@ -1,19 +1,26 @@
 # From Prompt to Program: Coding with AI
 
-**A 55-minute workshop with Prof. Hedhli • County College of Morris**
+**Create Your Own Event Budget App**  
+A 55-minute CCM workshop with Prof. Hedhli
 
-## Build a real app window
+You will create a small graphical Python app using GitHub Copilot. **my_project.py starts empty.** Your prompts will turn it into a window with input fields, a Calculate button, and a result.
 
-Create an **Event Budget Planner** with text fields, a Calculate button, and a result that shows whether your event fits your budget.
+No programming experience needed. You choose what the app should do, Copilot helps write the code, and you run it to check the answer.
 
-No programming experience needed. You will describe an app to GitHub Copilot, run the Python code, check its answer, and request one improvement. You do not need to understand every line.
+## Your assignment
 
-**The challenge: plan an event for 20 people with $300.**
+Build an app in small stages:
+1. Calculate food costs for an event.
+2. Add supplies costs.
+3. Give it your event's name and colors.
+4. Check it and show a partner.
 
-## 1 Clone this repository
+Use only **my_project.py** for your work. You do not need to write the code from memory.
+
+## 1 Clone and open
 
 1. Open VS Code.
-2. Press **Ctrl+Shift+P** on Windows or **Cmd+Shift+P** on Mac.
+2. Press **Ctrl+Shift+P** (Windows) or **Cmd+Shift+P** (Mac).
 3. Choose **Git: Clone** and paste:
 
    ```text
@@ -21,86 +28,82 @@ No programming experience needed. You will describe an app to GitHub Copilot, ru
    ```
 
 4. Choose a folder, then select **Open**.
+5. Open **my_project.py**. It is intentionally empty. Do not run it yet.
 
-Everyone clones the same instructor repository. No new repository or push is required.
+If you cloned an older workshop version, ask the facilitator to help you get a fresh copy in a new folder so your existing work is preserved.
 
-## 2 Try the working app
+## 2 Create your first version
 
-Open **my_project.py** and select **Run Python File in Terminal**. Choose the provided Python interpreter if asked. A separate app window opens, possibly behind VS Code.
+Open **GitHub Copilot Chat** and copy this prompt:
 
-Click **Calculate my event** with the sample values:
-- 20 attendees
-- $10 food per person
-- $50 supplies
-- $300 budget
+> I have never programmed before. Create my first version in the empty my_project.py file. Use Python Tkinter to open an Event Budget Planner window with two labeled input fields: number of attendees and food cost per person in dollars. Add a Calculate button that displays attendees times food cost as a dollar amount. Keep the interface readable and the code straightforward with brief comments. Show a helpful message for blank, nonnumeric, negative, or non-finite input, and require at least one attendee. Use only the standard library. Do not add supplies, a budget limit, or extra features yet. Explain how to apply the code and run the file in VS Code. If print() is needed, use comma-separated arguments, not f-strings.
 
-**Expected result: $250 total and $50 remaining.**
+Copilot will suggest code:
+1. Review and apply the suggested edit to **my_project.py**. If it only displays code in chat, copy just the Python code into your file.
+2. Save the file.
+3. Select **Run Python File in Terminal** at the top right.
+4. If asked, choose the provided Python interpreter.
+5. Look for the separate app window, which may open behind VS Code.
 
-Try $15 food per person. The total should be **$350**, which is **$50 over budget**.
+**Check:** enter **20** attendees and **10** dollars per person. Click Calculate. The result should be **$200**.
 
-The file already contains a working example so you can see the goal. You will use a prompt to recreate or change it, then compare the result. Close the app window before running again.
+Prompts go in **Copilot Chat**. Event numbers go into the **app's fields**.
 
-## 3 Your app prompt
+## 3 Add a feature through a new prompt
 
-Open **GitHub Copilot Chat** and paste:
+Close the app window, then ask Copilot:
 
-> I have never programmed before. In my_project.py, create a small Python Tkinter event budget app. Include labeled fields for number of attendees, food cost per person, supplies cost, and available budget. Add a Calculate button. Show the total cost and how much is left or how far over budget I am. Start with 20 attendees, $10 food per person, $50 supplies, and a $300 budget. Handle blank, nonnumeric, negative, and non-finite input with a helpful message. Require at least one attendee. Use only the standard library, a readable window, clear variable names, and brief comments. Explain how to run it in VS Code. If you use print(), separate arguments with commas, not f-strings.
+> Add a supplies cost field to my existing app. Update Calculate to use attendees times food cost per person plus supplies. Keep the existing interface and input checks working, including checking the supplies input. Explain what changed and give me one test.
 
-Copilot may suggest replacing the current example. Review and apply that edit to **my_project.py**, or copy only the Python code into the file if it appears only in chat. Save, close the old app, and run again.
+Review and apply the edit, save, and run again.
 
-**Prompt = your request. Program = the Python code. App = the window you use.** Copilot helps write the code; Python calculates the budget.
+**Check:** 20 attendees, $10 food per person, and $50 supplies should give **$250**.
 
-## 4 Check it works
+Try changing supplies to $80. The total should become **$280**.
 
-Try both examples above. Then try a word or blank field. Your app should explain what needs fixing instead of stopping with an error.
+## 4 Make it yours
 
-Type requests to AI in **Copilot Chat**. Type event numbers into the **app's fields**.
+Choose an event: a faculty workshop, club meetup, community gathering, or celebration. Replace the brackets in this prompt:
 
-## 5 Make it useful to you
+> Personalize my app for [my event name]. Change the window title and use [my chosen colors]. Keep the fields, calculations, and input checks working. Explain the changes briefly.
 
-Choose ONE change:
-- Give the app your event's name and chosen colors.
-- Add a result showing the cost per attendee.
-- Add a Clear button.
+Save, close the old app window, and run again. Check that your title and colors changed and the $250 example still works.
 
-Copy:
+## 5 The $300 partner challenge
 
-> Update my_project.py to [my chosen change]. Keep the existing calculation and input checks working. Explain what changed and give me one test.
+Imagine you have **$300 for 20 people**. Your app does not need a budget-limit feature. Use its total to find a plan that fits.
 
-Save, close the old window, run, and check.
+Take turns choosing food and supplies costs. Can you stay at or below $300? Tell your partner what the total should be before clicking Calculate.
 
-## 6 The $300 partner challenge
+Then try a blank field or the word **pizza** in a number field. Does your app show a helpful message? If not, ask Copilot to fix it.
 
-Pick an event: a student club meetup, faculty workshop, or celebration. Keep 20 attendees and the $300 limit. Choose food and supply costs that fit. Take turns changing the numbers.
+## 6 Share and save
 
-In 20 seconds, share your event, total cost, and one change you asked AI to make.
+In 20 seconds, show your app, name your event, and explain one change you requested.
 
-## Completion checklist
-
-- [ ] I ran the app and checked the $250 example.
-- [ ] I tested an over-budget plan.
-- [ ] I requested one change and checked it.
+- [ ] I created an app from the empty file using a prompt.
+- [ ] I checked the first $200 calculation.
+- [ ] I added supplies and checked the $250 calculation.
+- [ ] I personalized the app and tested it again.
 - [ ] I saved my_project.py to my own approved storage.
+
+No new repository or push to the instructor's repository is required.
+
+## Help prompt
+
+> I entered [values]. I expected [result], but got [actual result]. Here is my code and any error: [paste]. Help me make the smallest fix and explain it simply.
+
+Save before running and close the previous app window before starting again. If Python reports missing Tk/_tkinter or no display, ask the facilitator for setup help.
 
 ## Our 55 minutes
 
 | Minutes | Activity |
 |---|---|
-| 0–5 | Live app demonstration |
-| 5–15 | Clone and run the example |
-| 15–25 | Use the app prompt in Copilot |
-| 25–35 | Check calculations and unexpected input |
-| 35–45 | Make one personal improvement |
-| 45–55 | Partner challenge, sharing, and saving |
+| 0–5 | Instructor shows the goal and explains prompts |
+| 5–12 | Clone and open the empty file |
+| 12–27 | Create the first app and check $200 |
+| 27–37 | Add supplies and check $250 |
+| 37–47 | Personalize and try the partner challenge |
+| 47–55 | Share and save |
 
-## Help
-
-Save before running. Close the previous app window first. If no window appears, look behind VS Code and ask the facilitator.
-
-For a code problem, copy this into Copilot:
-
-> I expected [result], but got [actual result]. Here is my code and full error: [paste]. Help me make the smallest fix and explain it simply.
-
-Missing Tk/_tkinter or display errors need facilitator setup help. Use desktop Python with Tk support, not a terminal-only remote environment. No pip packages are needed.
-
-**Files:** my_project.py is the only Python file. PROMPTS.md contains copyable prompts and FACILITATOR.md contains the instructor guide. This activity uses Tkinter, with no turtle graphics.
+**Facilitator:** test desktop Python/Tk, Git, the Python extension, and Copilot on the lab computers beforehand. No pip packages are needed. FACILITATOR.md includes a backup plan. The instructor folder contains a finished reference, not the participant starting point.
