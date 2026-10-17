@@ -1,27 +1,40 @@
-# From Prompt to Program step by step
+# Make It Move: prompt starters
 
-Start with the empty my_project.py. Use ONE prompt at a time in Copilot Chat. After each edit, save, close any old app window, run, and check the result.
+Write your own requests. Include what should happen and what should stay unchanged. Use one request at a time in the same Copilot conversation.
 
-## 1 Create the app
-I have never programmed before. Create my first version in the empty my_project.py file. Use Python Tkinter to open an Event Budget Planner window with two labeled input fields: number of attendees and food cost per person in dollars. Add a Calculate button that displays attendees times food cost as a dollar amount. Keep the interface readable and the code straightforward with brief comments. Show a helpful message for blank, nonnumeric, negative, or non-finite input, and require at least one attendee. Use only the standard library. Do not add supplies, a budget limit, or extra features yet. Explain how to apply the code and run the file in VS Code. If print() is needed, use comma-separated arguments, not f-strings.
+## Create • one bouncing ball
+Start: "Help me create a Python animation that…"
 
-Check: 20 attendees at $10 each gives $200.
+Include Python Tkinter Canvas, one moving ball, bouncing off all four edges, your colors, and my_project.py. Use only the standard library. Request after() scheduling so the window remains responsive.
 
-## 2 Add supplies
-Add a supplies cost field to my existing app. Update Calculate to use attendees times food cost per person plus supplies. Keep the existing interface and input checks working, including checking the supplies input. Explain what changed and give me one test.
+Check all four edges before adding features.
 
-Check: 20 attendees at $10 each plus $50 supplies gives $250.
+## Interact • clicks add balls
+Start: "When I click inside the drawing area, I want…"
 
-## 3 Personalize
-Personalize my app for [my event name]. Change the window title and use [my chosen colors]. Keep the fields, calculations, and input checks working. Explain the changes briefly.
+Describe a new moving ball near the click, all balls staying inside the canvas, and a limit such as 30 balls.
 
-Check: the title and colors change, and the $250 calculation still works.
+Check: one starting ball plus three clicks gives four balls. Try an edge click.
 
-## 4 Fix a problem
-I entered [values]. I expected [result], but got [actual result]. Here is my code and error: [paste]. Help me make the smallest fix and explain it simply.
+## Personalize • choose two
+Start: "Change… while keeping…"
 
-## Explain without editing
-Explain what happens when I click Calculate in everyday language. Point out the calculation line. Do not change the code.
+Choose colors, size, speed, title, or Pause/Resume. Make one request at a time. Explain exactly what the change should do.
 
-## Optional only if time remains
-Add an available-budget field and display how much is left or how far over budget the event is. Preserve existing calculations and input checks. Check: a $250 total with a $300 budget leaves $50.
+## Partner feedback
+Start: "My partner noticed… Please change…"
+
+Preserve the features that already work. Run and check the improvement.
+
+## Fix
+Start: "I expected… but I saw…"
+
+Include relevant code and the full error if any. Ask for the smallest fix.
+
+## Understand
+"Explain the part that moves the ball in everyday language. Do not change the code."
+
+## Optional game direction
+Start: "Turn this into a click-the-target game…"
+
+Define hits and misses, score behavior, and whether the target moves after a hit. Replace click-to-add behavior with click-to-score rather than leaving conflicting click actions. Keep it to one target initially.
