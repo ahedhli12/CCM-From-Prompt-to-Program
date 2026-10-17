@@ -1,24 +1,24 @@
 # From Prompt to Program: Coding with AI
 
-**Create Your Own Event Budget App**  
-A 55-minute CCM workshop with Prof. Hedhli
+## Make It Move
+**A 55-minute creative workshop with Prof. Hedhli • County College of Morris**
 
-You will create a small graphical Python app using GitHub Copilot. **my_project.py starts empty.** Your prompts will turn it into a window with input fields, a Calculate button, and a result.
+Create a Python animation that responds to your mouse. Start with one bouncing ball, add click interaction, then design your own visual experience.
 
-No programming experience needed. You choose what the app should do, Copilot helps write the code, and you run it to check the answer.
+No coding experience needed. You describe what you want to GitHub Copilot, run the program, and check what it does.
 
-## Your assignment
+**Your starting file is my_project.py. It is intentionally empty. You create the program during the session.**
 
-Build an app in small stages:
-1. Calculate food costs for an event.
-2. Add supplies costs.
-3. Give it your event's name and colors.
-4. Check it and show a partner.
+## 1 Plan and set up • 0–12 minutes
 
-Use only **my_project.py** for your work. You do not need to write the code from memory.
+Watch the instructor's demonstration, then choose a direction:
+- A calming display with slow movement and soft colors.
+- A lively visual playground with bright colors and different sizes.
+- A reaction challenge where clicking a moving target earns points.
 
-## 1 Clone and open
+Start with the same basic bouncing ball before adding your personal direction.
 
+Clone the workshop:
 1. Open VS Code.
 2. Press **Ctrl+Shift+P** (Windows) or **Cmd+Shift+P** (Mac).
 3. Choose **Git: Clone** and paste:
@@ -27,83 +27,87 @@ Use only **my_project.py** for your work. You do not need to write the code from
    https://github.com/ahedhli12/CCM-From-Prompt-to-Program.git
    ```
 
-4. Choose a folder, then select **Open**.
-5. Open **my_project.py**. It is intentionally empty. Do not run it yet.
+4. Choose a folder and select **Open**.
+5. Open **my_project.py**. Do not run it until you have generated code.
 
-If you cloned an older workshop version, ask the facilitator to help you get a fresh copy in a new folder so your existing work is preserved.
+If you have an earlier version of this workshop, ask the facilitator to help you clone into a fresh folder so your previous work is preserved.
 
-## 2 Create your first version
+## 2 Create one moving ball • 12–25 minutes
 
-Open **GitHub Copilot Chat** and copy this prompt:
+Write your own prompt in **GitHub Copilot Chat**. Include:
+- Python Tkinter Canvas, using only the standard library.
+- A window containing one ball that moves and bounces off every edge.
+- Continuous smooth movement while the window stays responsive.
+- All code in **my_project.py**.
 
-> I have never programmed before. Create my first version in the empty my_project.py file. Use Python Tkinter to open an Event Budget Planner window with two labeled input fields: number of attendees and food cost per person in dollars. Add a Calculate button that displays attendees times food cost as a dollar amount. Keep the interface readable and the code straightforward with brief comments. Show a helpful message for blank, nonnumeric, negative, or non-finite input, and require at least one attendee. Use only the standard library. Do not add supplies, a budget limit, or extra features yet. Explain how to apply the code and run the file in VS Code. If print() is needed, use comma-separated arguments, not f-strings.
+Starter: **“Help me create a Python animation that…”**
 
-Copilot will suggest code:
-1. Review and apply the suggested edit to **my_project.py**. If it only displays code in chat, copy just the Python code into your file.
-2. Save the file.
-3. Select **Run Python File in Terminal** at the top right.
-4. If asked, choose the provided Python interpreter.
-5. Look for the separate app window, which may open behind VS Code.
+Explain the colors and look you want. Ask Copilot to use Tkinter's after() scheduling for movement rather than a blocking animation loop.
 
-**Check:** enter **20** attendees and **10** dollars per person. Click Calculate. The result should be **$200**.
+Review and apply Copilot's edit. If it shows code only in chat, copy just the Python code into my_project.py. Save, then choose **Run Python File in Terminal**. Select the provided Python interpreter if asked.
 
-Prompts go in **Copilot Chat**. Event numbers go into the **app's fields**.
+**Check:** watch the ball reach the left, right, top and bottom edges. Does it bounce without disappearing? Can you still move or close the window?
 
-## 3 Add a feature through a new prompt
+## 3 Make it respond • 25–33 minutes
 
-Close the app window, then ask Copilot:
+Ask Copilot to make a click inside the drawing area add another moving ball near that spot. Each ball should remain inside the canvas.
 
-> Add a supplies cost field to my existing app. Update Calculate to use attendees times food cost per person plus supplies. Keep the existing interface and input checks working, including checking the supplies input. Explain what changed and give me one test.
+Starter: **“When I click inside the drawing area, I want…”**
 
-Review and apply the edit, save, and run again.
+**Check:** click three times. You should now see four moving balls. Click near an edge: does the new ball stay inside? Prevent unlimited spawning with a sensible limit, such as 30 balls.
 
-**Check:** 20 attendees, $10 food per person, and $50 supplies should give **$250**.
+## 4 Give it your style • 33–38 minutes
 
-Try changing supplies to $80. The total should become **$280**.
+Choose TWO changes and describe them yourself:
+- Background and ball colors.
+- Ball sizes or movement speed.
+- A title that fits your theme.
+- A Pause/Resume button.
 
-## 4 Make it yours
+Keep the movement and mouse interaction working. Make one change at a time, then save and test.
 
-Choose an event: a faculty workshop, club meetup, community gathering, or celebration. Replace the brackets in this prompt:
+**Optional direction:** turn the animation into a reaction game with one target and a score. Tell Copilot that clicking should score a hit rather than add another ball. Make this request only after the basic animation works.
 
-> Personalize my app for [my event name]. Change the window title and use [my chosen colors]. Keep the fields, calculations, and input checks working. Explain the changes briefly.
+## 5 Partner challenge • 38–48 minutes
 
-Save, close the old app window, and run again. Check that your title and colors changed and the $250 example still works.
+Let a partner use your creation before explaining it. Switch roles.
 
-## 5 The $300 partner challenge
+Ask:
+- What did you expect a click to do?
+- Can you understand how to use it?
+- Did anything disappear, freeze or behave unexpectedly?
 
-Imagine you have **$300 for 20 people**. Your app does not need a budget-limit feature. Use its total to find a plan that fits.
+Use their feedback to request ONE improvement from Copilot. Check the result.
 
-Take turns choosing food and supplies costs. Can you stay at or below $300? Tell your partner what the total should be before clicking Calculate.
+**Try a specific prompt:** replace “make it better” with the exact behavior you want. For example, explain how much faster you want the ball to move and what should remain unchanged.
 
-Then try a blank field or the word **pizza** in a number field. Does your app show a helpful message? If not, ask Copilot to fix it.
+## 6 Show and save • 48–55 minutes
 
-## 6 Share and save
+Give a 20-second demonstration: your idea, one request you made, and one thing you checked.
 
-In 20 seconds, show your app, name your event, and explain one change you requested.
-
-- [ ] I created an app from the empty file using a prompt.
-- [ ] I checked the first $200 calculation.
-- [ ] I added supplies and checked the $250 calculation.
-- [ ] I personalized the app and tested it again.
+- [ ] I created my animation from the empty file.
+- [ ] My ball bounces off every edge.
+- [ ] My app responds to clicks.
+- [ ] I made two personal changes.
+- [ ] My partner tested it and I improved something.
 - [ ] I saved my_project.py to my own approved storage.
 
 No new repository or push to the instructor's repository is required.
 
-## Help prompt
+## Help
 
-> I entered [values]. I expected [result], but got [actual result]. Here is my code and any error: [paste]. Help me make the smallest fix and explain it simply.
+After each edit: **save, close the old app window, run again, and check**. The drawing window may open behind VS Code.
 
-Save before running and close the previous app window before starting again. If Python reports missing Tk/_tkinter or no display, ask the facilitator for setup help.
+Prompt starter: **“I expected… but I saw… Here is my code and the error. Help me make the smallest fix.”**
 
-## Our 55 minutes
+For missing Tk/_tkinter or display errors, ask the facilitator. This workshop needs desktop Python with Tk and a graphical display. No pip packages, image downloads or sound files are required.
 
-| Minutes | Activity |
-|---|---|
-| 0–5 | Instructor shows the goal and explains prompts |
-| 5–12 | Clone and open the empty file |
-| 12–27 | Create the first app and check $200 |
-| 27–37 | Add supplies and check $250 |
-| 37–47 | Personalize and try the partner challenge |
-| 47–55 | Share and save |
+## Files
 
-**Facilitator:** test desktop Python/Tk, Git, the Python extension, and Copilot on the lab computers beforehand. No pip packages are needed. FACILITATOR.md includes a backup plan. The instructor folder contains a finished reference, not the participant starting point.
+- **my_project.py:** empty participant workspace
+- **PROMPTS.md:** short prompt starters and checks
+- **FACILITATOR.md:** 55-minute delivery and setup notes
+- **.github/copilot-instructions.md:** friendly workshop coaching
+- **.vscode:** editor setup
+
+Earlier budget and robot handouts do not apply to this animation workshop.
