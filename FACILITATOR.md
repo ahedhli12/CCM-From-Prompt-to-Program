@@ -1,28 +1,38 @@
-# From Prompt to Program facilitator guide
+# Make It Move facilitator guide
 
-## Goal
-A 55-minute workshop for adults who have never programmed. Participants CREATE an app from the empty my_project.py through three prompts. Do not distribute a completed app as their starting file.
+## Purpose
+From Prompt to Program is a 55-minute workshop for adults with no coding experience. They create an interactive Python animation from the empty my_project.py using Copilot. The goal is to describe behavior, inspect output, and improve requests. They do not need to understand every animation command.
 
-## Setup
-Test desktop Python with Tk support, Git, VS Code Python extension and Copilot using the actual training image/accounts. No pip packages are needed. Confirm a Tk window opens and closes. Keep credentials separate.
+## Setup before the session
+Test Git, VS Code Python extension, Copilot access, and desktop Python Tkinter using the actual training computers and accounts. A graphical display and Tk are required. No pip packages or external assets are needed.
+Prepare your own small demo separately before participants arrive. Verify all four boundaries, click-to-add, responsiveness, and closing/restarting. Do not prefill their my_project.py.
+If they have an older clone, use a fresh folder rather than discarding their work.
 
 ## 55 minutes
-0–5: Demonstrate the completed reference from instructor/event_budget_reference.py on your screen only. Explain the goal: describe an app, run it, check it, improve it.
-5–12: Clone the repository and open the empty my_project.py. Do not ask them to run it before generating code.
-12–27: Use prompt 1 to create only attendees, food cost and Calculate. Apply the code and run it. Check 20 times 10 equals $200.
-27–37: Use prompt 2 to add supplies. Check 20 times 10 plus 50 equals $250.
-37–47: Personalize title/colors, then pair up to plan for 20 people with $300. The required app does not have a budget field; partners compare the total to $300 themselves.
-47–55: Share apps briefly and save my_project.py to personal approved storage.
+0–5: Show one moving ball, click to add another, then take a specific audience suggestion. Ask: "What should happen when we click?"
+5–12: Clone and open the empty file. Participants sketch or describe a calming display, visual playground or optional reaction game.
+12–25: Guide their own prompt for one bouncing ball using Tkinter Canvas and after(). Apply generated code and test all four boundaries.
+25–33: Add click-to-create interaction with a 30-ball limit. Check one initial ball plus three clicks produces four and that edge clicks stay visible.
+33–38: Choose two personal changes to colors, size, speed, title or Pause/Resume.
+38–48: Partners use each other's apps without initial coaching, report one issue, and request and test one improvement.
+48–55: Short showcases and save my_project.py to personal approved storage. No push is required.
 
-## Teaching
-Prompts go in Copilot Chat; numbers go in app fields. A button callback means the instructions that run when clicked. Explain one relevant line at a time. Let AI provide code and learners choose behavior and check results. Use short adult-appropriate encouragement. No robot or turtle activities.
+## Keep it manageable
+Use only my_project.py for participant code. The required activity is animation and click interaction, not a full physics engine. Ball-to-ball collisions, gravity and scoring are not required.
+Small functions, event bindings and animation loops scheduled with after() are appropriate. Do not carry over earlier bans on functions and loops.
+Explain Canvas as the drawing area, after() as scheduling the next movement, and a callback as what runs after a click. Avoid a syntax lecture.
+If a participant chooses a reaction game, use one target and click-to-score after the basic animation works. Explicitly replace the click-to-add action.
 
-## Backup
-The instructor/event_budget_reference.py is a completed reference with supplies and budget-limit features. It is for your demo or recovery only and is not the staged assignment starting point. If AI access fails, pair participants with a working account. Use the reference only if needed, and explain that it has more features than the first-stage task.
-If someone already edited a previous clone, use a fresh folder instead of discarding their work.
+## Checks
+All four edges: the full ball remains visible, does not stick or disappear.
+Three clicks: exactly three extra balls appear, moving independently.
+Edge click: the new ball is positioned inside the canvas.
+Resizing: either use a fixed-size drawing area or update the bounce boundaries to the actual canvas size.
+Pause/Resume, if added: movement pauses and resumes without duplicate timers or sudden speed changes.
+Limit reached: no unlimited object creation or confusing crash.
+Window stays responsive and closes normally.
 
-## Check
-Stage 1: 20 attendees, $10 food gives $200.
-Stage 2: add $50 supplies for $250; $80 supplies gives $280.
-Try blank, word, negative or non-finite costs and zero attendees. Expect helpful feedback.
-Do not require a budget-limit feature, cost per person, or Clear button. Available-budget feedback is optional only if time remains.
+## Support and fallback
+For AI access problems, pair with a working account or demonstrate while participants design prompts and predict results. Have your tested local demo available for recovery.
+Missing Tk/display is an environment problem, not an animation bug. Use a computer known to work. Never claim the lab is ready until tested there.
+If timing is tight, skip optional game features and focus on one working interaction and partner feedback.
