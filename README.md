@@ -1,26 +1,22 @@
 # From Prompt to Program: Coding with AI
 
-## Make It Move
-**A 55-minute creative workshop with Prof. Hedhli • County College of Morris**
+## Save the Ball
+**With Prof. Hedhli • County College of Morris**
 
-Create a Python animation that responds to your mouse. Start with one bouncing ball, add click interaction, then design your own visual experience.
+Create your own Python game with **GitHub Copilot**. No programming experience needed.
 
-No coding experience needed. You describe what you want to GitHub Copilot, run the program, and check what it does.
+**The goal:** save the moving ball from touching the boundaries of the game area.
+- Click inside the ball to earn one point, return it to the center, and send it in a new direction.
+- Clicking the background does nothing.
+- When any part of the ball touches a boundary, the game ends.
+- Play Again starts a fresh game with zero points.
 
-**Your starting file is my_project.py. It is intentionally empty. You create the program during the session.**
+**my_project.py is intentionally empty. You create the game through prompts.**
 
-## 1 Plan and set up • 0–12 minutes
+## 1 Open your project
 
-Watch the instructor's demonstration, then choose a direction:
-- A calming display with slow movement and soft colors.
-- A lively visual playground with bright colors and different sizes.
-- A reaction challenge where clicking a moving target earns points.
-
-Start with the same basic bouncing ball before adding your personal direction.
-
-Clone the workshop:
 1. Open VS Code.
-2. Press **Ctrl+Shift+P** (Windows) or **Cmd+Shift+P** (Mac).
+2. Press **Ctrl+Shift+P** on Windows or **Cmd+Shift+P** on Mac.
 3. Choose **Git: Clone** and paste:
 
    ```text
@@ -28,86 +24,74 @@ Clone the workshop:
    ```
 
 4. Choose a folder and select **Open**.
-5. Open **my_project.py**. Do not run it until you have generated code.
+5. Open **my_project.py**. Do not run the empty file yet.
 
-If you have an earlier version of this workshop, ask the facilitator to help you clone into a fresh folder so your previous work is preserved.
+If it already contains code from an earlier activity, ask the instructor for help getting a fresh copy without losing your work.
 
-## 2 Create one moving ball • 12–25 minutes
+## 2 Ask GitHub Copilot to create the game
 
-Write your own prompt in **GitHub Copilot Chat**. Include:
-- Python Tkinter Canvas, using only the standard library.
-- A window containing one ball that moves and bounces off every edge.
-- Continuous smooth movement while the window stays responsive.
-- All code in **my_project.py**.
+Open **GitHub Copilot Chat** in VS Code. A prompt is a message telling GitHub Copilot what you want.
 
-Starter: **“Help me create a Python animation that…”**
+Copy this example:
 
-Explain the colors and look you want. Ask Copilot to use Tkinter's after() scheduling for movement rather than a blocking animation loop.
+> I have never programmed before. Help me create a simple Python game in my_project.py. Show one large ball moving slowly inside a window. Start it in the center. When it touches an edge, stop the game and display Game Over. It should not bounce. Do not add points yet. Use Python’s built-in drawing tools without extra downloads. Explain how to run it in VS Code using simple steps.
 
-Review and apply Copilot's edit. If it shows code only in chat, copy just the Python code into my_project.py. Save, then choose **Run Python File in Terminal**. Select the provided Python interpreter if asked.
+Review the suggested edit and choose **Apply** or **Keep** if offered. If GitHub Copilot only shows code in chat, ask the instructor to help place it in my_project.py.
 
-**Check:** watch the ball reach the left, right, top and bottom edges. Does it bounce without disappearing? Can you still move or close the window?
+Save with **Ctrl+S** (Windows) or **Cmd+S** (Mac). Select **Run Python File in Terminal** at the top right. Ask the instructor if you are prompted to select Python.
 
-## 3 Make it respond • 25–33 minutes
+**Try it:** the ball moves slowly and stops with Game Over when it touches a boundary. It does not bounce.
 
-Ask Copilot to make a click inside the drawing area add another moving ball near that spot. Each ball should remain inside the canvas.
+## 3 Add clicking and points
 
-Starter: **“When I click inside the drawing area, I want…”**
+Continue in the same GitHub Copilot conversation:
 
-**Check:** click three times. You should now see four moving balls. Click near an edge: does the new ball stay inside? Prevent unlimited spawning with a sensible limit, such as 30 balls.
+> When I click the ball, give me one point, move it back to the center, and send it in a new direction at the same slow speed. Show my score. Clicking outside the ball should do nothing. Stop adding points after Game Over.
 
-## 4 Give it your style • 33–38 minutes
+**Try it:** click the ball to earn one point. Click the background and check that no point is added.
 
-Choose TWO changes and describe them yourself:
-- Background and ball colors.
-- Ball sizes or movement speed.
-- A title that fits your theme.
-- A Pause/Resume button.
+## 4 Add Play Again
 
-Keep the movement and mouse interaction working. Make one change at a time, then save and test.
+> Add a Play Again button after Game Over. It should start a new game with zero points and the ball in the center, moving at its original speed.
 
-**Optional direction:** turn the animation into a reaction game with one target and a score. Tell Copilot that clicking should score a hit rather than add another ball. Make this request only after the basic animation works.
+**Try it:** let the ball reach a boundary. Click Play Again. Check that the score resets and the ball moves at its original speed.
 
-## 5 Partner challenge • 38–48 minutes
+## 5 Make it your own
 
-Let a partner use your creation before explaining it. Switch roles.
+Try this example or request your own colors:
 
-Ask:
-- What did you expect a click to do?
-- Can you understand how to use it?
-- Did anything disappear, freeze or behave unexpectedly?
+> Make the background dark blue and the ball yellow. Keep the score easy to read and keep everything else working.
 
-Use their feedback to request ONE improvement from Copilot. Check the result.
+For an easier game:
 
-**Try a specific prompt:** replace “make it better” with the exact behavior you want. For example, explain how much faster you want the ball to move and what should remain unchanged.
+> Make the ball larger and move more slowly so I have more time to click it. Keep the other game rules the same.
 
-## 6 Show and save • 48–55 minutes
+**After every edit:** apply the changes, save, close the old game window, and run again.
 
-Give a 20-second demonstration: your idea, one request you made, and one thing you checked.
+## 6 Challenge a partner
 
-- [ ] I created my animation from the empty file.
-- [ ] My ball bounces off every edge.
-- [ ] My app responds to clicks.
-- [ ] I made two personal changes.
-- [ ] My partner tested it and I improved something.
-- [ ] I saved my_project.py to my own approved storage.
+Take turns playing each other's games. Can you reach five points?
+Check that hits score exactly one point, misses score nothing, touching any boundary ends the game, and Play Again resets it.
 
-No new repository or push to the instructor's repository is required.
+Ask your partner for one improvement. Describe it to GitHub Copilot and try the change.
+
+## 7 Show and save
+
+Show your game and explain one change you requested. Save **my_project.py** to your own approved storage before leaving. You do not need a new repository or a push to the instructor's repository.
 
 ## Help
 
-After each edit: **save, close the old app window, run again, and check**. The drawing window may open behind VS Code.
+> I am a beginner. My game is not working as expected. Please help me fix it one step at a time. Tell me what information you need and explain it simply.
 
-Prompt starter: **“I expected… but I saw… Here is my code and the error. Help me make the smallest fix.”**
-
-For missing Tk/_tkinter or display errors, ask the facilitator. This workshop needs desktop Python with Tk and a graphical display. No pip packages, image downloads or sound files are required.
+Copy any error into GitHub Copilot Chat. Look behind VS Code for a missing game window. Ask the instructor if the window does not open.
 
 ## Files
 
-- **my_project.py:** empty participant workspace
-- **PROMPTS.md:** short prompt starters and checks
-- **FACILITATOR.md:** 55-minute delivery and setup notes
-- **.github/copilot-instructions.md:** friendly workshop coaching
-- **.vscode:** editor setup
+- **my_project.py:** your empty starting file
+- **PROMPTS.md:** example prompts
+- **handouts/CCM-Save-the-Ball-Participant-Guide.docx:** beginner directions
+- **FACILITATOR.md:** instructor notes
+- **.github/copilot-instructions.md:** friendly GitHub Copilot guidance
+- **.vscode:** editor settings
 
-Earlier budget and robot handouts do not apply to this animation workshop.
+**Instructor setup:** this activity uses desktop Python with Tkinter and a graphical display. No extra Python packages or downloaded assets are needed. Test on the workshop computers before the session.
