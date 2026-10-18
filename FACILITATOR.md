@@ -1,38 +1,32 @@
-# Make It Move facilitator guide
+# From Prompt to Program facilitator guide
 
-## Purpose
-From Prompt to Program is a 55-minute workshop for adults with no coding experience. They create an interactive Python animation from the empty my_project.py using Copilot. The goal is to describe behavior, inspect output, and improve requests. They do not need to understand every animation command.
+## Final activity
+Save the Ball: prevent one moving ball from touching any boundary by clicking it. A hit gives one point, returns it to the center and chooses a new direction at the same slow speed. A miss does nothing. Any boundary contact ends the game. Play Again resets score, position and original speed.
 
-## Setup before the session
-Test Git, VS Code Python extension, Copilot access, and desktop Python Tkinter using the actual training computers and accounts. A graphical display and Tk are required. No pip packages or external assets are needed.
-Prepare your own small demo separately before participants arrive. Verify all four boundaries, click-to-add, responsiveness, and closing/restarting. Do not prefill their my_project.py.
-If they have an older clone, use a fresh folder rather than discarding their work.
+This is a single 55-minute session for adults who have never programmed. Keep my_project.py empty. Participants create their code with GitHub Copilot using the participant guide and PROMPTS.md.
 
-## 55 minutes
-0–5: Show one moving ball, click to add another, then take a specific audience suggestion. Ask: "What should happen when we click?"
-5–12: Clone and open the empty file. Participants sketch or describe a calming display, visual playground or optional reaction game.
-12–25: Guide their own prompt for one bouncing ball using Tkinter Canvas and after(). Apply generated code and test all four boundaries.
-25–33: Add click-to-create interaction with a 30-ball limit. Check one initial ball plus three clicks produces four and that edge clicks stay visible.
-33–38: Choose two personal changes to colors, size, speed, title or Pause/Resume.
-38–48: Partners use each other's apps without initial coaching, report one issue, and request and test one improvement.
-48–55: Short showcases and save my_project.py to personal approved storage. No push is required.
+## Before the session
+Test Git, GitHub Copilot access, the Python extension, desktop Python/Tkinter and the separate game window on the actual lab image and accounts.
+Make your own tested demo separately. Do not put completed code in the participant starting file.
+Confirm that applying edits, running, closing and rerunning work. No pip packages, assets or sound files are needed.
 
-## Keep it manageable
-Use only my_project.py for participant code. The required activity is animation and click interaction, not a full physics engine. Ball-to-ball collisions, gravity and scoring are not required.
-Small functions, event bindings and animation loops scheduled with after() are appropriate. Do not carry over earlier bans on functions and loops.
-Explain Canvas as the drawing area, after() as scheduling the next movement, and a callback as what runs after a click. Avoid a syntax lecture.
-If a participant chooses a reaction game, use one target and click-to-score after the basic animation works. Explicitly replace the click-to-add action.
+## Delivery
+Start by playing your demo with the room. Explain the goal and show where to type a prompt in GitHub Copilot Chat.
+Guide participants through cloning, opening the empty file, creating the initial moving ball, adding hit scoring and adding Play Again.
+Then let them choose colors or difficulty, swap with a partner, request one improvement and share.
+The participant handout has no task timings or fill-in blanks. Keep the pace flexible within 55 minutes and leave time to save.
+Explain only what they need to do next. They do not need to understand functions, Canvas, after() or all generated code. Technical terms belong in your support notes rather than their required prompts.
 
 ## Checks
-All four edges: the full ball remains visible, does not stick or disappear.
-Three clicks: exactly three extra balls appear, moving independently.
-Edge click: the new ball is positioned inside the canvas.
-Resizing: either use a fixed-size drawing area or update the bounce boundaries to the actual canvas size.
-Pause/Resume, if added: movement pauses and resumes without duplicate timers or sudden speed changes.
-Limit reached: no unlimited object creation or confusing crash.
-Window stays responsive and closes normally.
+- Without clicks, any part of the ball reaching any of the four boundaries triggers Game Over.
+- Clicking inside the circle during play adds exactly one point and recenters it.
+- Background clicks and all clicks after Game Over add no points.
+- One ball remains throughout; clicks do not spawn additional balls.
+- Play Again resets the score and speed, with only one animation timer running.
+- Color and size changes preserve visibility, accurate hit detection and boundary checks.
+- The window stays responsive and closes normally.
 
-## Support and fallback
-For AI access problems, pair with a working account or demonstrate while participants design prompts and predict results. Have your tested local demo available for recovery.
-Missing Tk/display is an environment problem, not an animation bug. Use a computer known to work. Never claim the lab is ready until tested there.
-If timing is tight, skip optional game features and focus on one working interaction and partner feedback.
+## Support
+Missing Tk/_tkinter or display problems require setup help rather than repeated code rewrites.
+For GitHub Copilot access trouble, pair with a working account. Use your local demo for recovery if needed.
+Keep participant work in my_project.py. Save to personal approved storage outside temporary training accounts. No push to your repository is required.
