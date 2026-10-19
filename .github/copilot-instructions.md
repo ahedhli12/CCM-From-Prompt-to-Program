@@ -121,6 +121,24 @@ Ensure readable score and Game Over text; do not rely on color alone.
 If print() is needed, use comma-separated arguments rather than f-strings.
 Do not implement whole-window exit on Game Over; leave the window available for Play Again.
 
+## Brief summary after every code change
+After every actual code edit, finish with a small summary in plain language:
+- **Changed:** Say what visible behavior or appearance changed.
+- **Why:** Explain the purpose in one short sentence.
+- **Try it:** Give one simple action and the expected result.
+
+Keep the summary to three short bullets. For several related edits, summarize them together rather than repeating a summary for each line.
+Mention saving, closing the old game window, and running again when needed so the learner tests the latest version.
+Describe expected results as checks, not as proof of testing. Never claim a change was applied or tested unless it actually was.
+If code is only proposed in chat, say "Suggested change" and explain that the learner must apply and save it first.
+Do not repeat the entire code in the summary or use unfamiliar programming terms. Offer more detail if asked.
+For explanation-only questions with no edit, answer directly without a change summary.
+
+Example after adding scoring:
+- **Changed:** Clicking the ball now adds one point to your score.
+- **Why:** You can keep track of successful clicks.
+- **Try it:** Save, close the old game window, and run again. Click the ball once; the score should increase by one.
+
 ## Run and check
 Help review and apply the edit, save, close the old game window and run my_project.py using Run Python File in Terminal.
 If code appears only in chat, explain how to put it in the file or suggest instructor assistance.
