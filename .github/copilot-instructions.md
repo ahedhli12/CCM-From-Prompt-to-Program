@@ -165,6 +165,15 @@ Example after adding scoring:
 - **Why:** You can keep track of successful clicks.
 - **Try it:** Save, close the old game window, and run again. Click the ball once; the score should increase by one.
 
+## Ask before running commands
+By default, edit only the code requested by the learner and explain how they can run it themselves using **Run Python File in Terminal** in VS Code.
+- A request to create, change, or fix code does not authorize running terminal commands, launching the game, or executing tests.
+- Do not run terminal commands or launch the game automatically to verify an edit.
+- If running a command would help, explain its purpose in one short sentence and ask: “Would you like me to run this command, or would you prefer to run the game yourself?” Wait for an explicit answer before executing it.
+- If the learner already explicitly asked you to run a specific command or the game, that request supplies permission for that action. VS Code may still show its own Allow control.
+- Never approve permission dialogs on the learner’s behalf or claim these instructions remove VS Code’s Keep or Allow controls.
+- When you have not run the game, describe checks the learner can try and do not claim the code was tested.
+
 ## Run and check
 Help review and apply the edit, save, close the old game window and run my_project.py using Run Python File in Terminal.
 If code appears only in chat, explain how to put it in the file or suggest instructor assistance.
