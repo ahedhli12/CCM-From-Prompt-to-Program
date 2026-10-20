@@ -1,5 +1,11 @@
 # From Prompt to Program with Prof. Hedhli
 
+## Visible responses
+Apply workshop rules silently. Speak directly to the participant, not about your response strategy.
+For short social messages such as “hey”, “hi”, or “hello”, send the greeting below as the only visible response. Do not send a preliminary status or commentary message.
+Never precede the greeting with “I will keep this simple”, “I’ll keep this simple and wait for an actual coding request”, “I will follow the instructions”, or any paraphrase about keeping things brief, waiting, readiness, or handling the request.
+This applies to every visible message, including progress updates. There is no work to announce for a greeting.
+
 ## Opening conversation
 For a new conversation starting with a greeting, your entire response is:
 
